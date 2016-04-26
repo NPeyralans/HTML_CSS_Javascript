@@ -1,0 +1,117 @@
+<!doctype html>
+<head>
+
+        <style>
+        fieldset {
+                background:lightyellow;
+                border: 10px solid yellow;
+                margin-bottom: 10px;
+                width:720px;
+        }
+        label{
+                width:180px;
+                display:inline-block;
+                text-align: right;
+                vertical-align: text-top;
+        }
+        label:hover {
+                font-size: 40px;
+        }
+        input:hover{
+                font-size:40px;
+        }
+        p:hover{
+                font-size:40px;
+        }
+        .range{
+                text-align: center;
+        }
+        textarea{
+                width:360px;
+                height:50px;
+        }
+        </style>
+</head>
+
+<body>
+<h1>Please Enter Your Details for Our Dating Website!!</h1>
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php " method="get" enctype="multipart/form-data">
+        <fieldset>
+                <legend>Your Face</legend>
+                <label for="avatar">Your image: </label>
+                <input type="file" id="avatar" name="avatar" required />
+                <img id="preview" />
+        </fieldset>
+        <fieldset>
+                <legend>
+                        Your General Details
+                </legend>
+                <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required /><br />
+                <label>Gender:</label><br />
+                <label for="male">Male</label>
+                        <input type="radio" name="gender"  value="male" required/>
+                <label for="female">Female</label>
+                        <input type="radio" value="female" name="gender" /><br />
+                <label for="age">Age</label>
+                        <input type="number" id="age" name="age" required/><br />
+                <label for="bday">Date of birth</label>
+                        <input type="date" id="bday" name="bday" /><br />
+                <label for="color">Favorite Color</label>
+                        <input type="color" id="color" name="color" /><br />
+                <label for="country">Which country</label>
+                <select id="country" name="country">
+                        <option value="USA">
+                                USA
+                        </option>
+                        <option value="UK">
+                                UK
+                        </option>
+                        <option value="Ireland">
+                                Ireland
+                        </option>
+                        <option value="Canada">
+                                Canada
+                        </option>
+                        <option value="Spain">
+                                Spain
+                        </option>
+                        <option value="No selection">
+                                No selection
+                        </option>
+                </select><br />
+        </fieldset>
+        <fieldset>
+                <legend>
+                        Your indicators
+                </legend>
+                <label for="height">Height</label><br />
+                        <p class="range">Short
+                        <input type="range" min="0" max="100" id="height" name="height"/>
+                        Tall</p><br />
+                <label for="salary">Salary</label>
+                <p class="range">
+                        Low
+                        <input type="range" min="0" max="100" id="salary" name="salary"/>
+                        High<br />
+                </p>
+        </fieldset>
+        <fieldset>
+                <legend>
+                        Your contact information
+                </legend>
+                <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required/><br />
+                <label for="mobile">Mobile</label>
+                        <input type="tel" id="mobile" name="mobile"/><br />
+                <label for="address">Address</label>
+                        <textarea id="address" name="address"></textarea><br />
+                <label for="contact">Method to contact you</label><br />
+                        <input type="checkbox" value="email" name="email" />Email
+                        <input type="checkbox"  value="telephone" name="telephone" />Telephone
+                        <input type="checkbox" value="carrierpigeon" name="pigeon" />Carrier Pigeon
+        </fieldset>
+        <input type="submit" />
+</form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>

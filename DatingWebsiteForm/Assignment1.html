@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+
+
+</head>
+
+<body>
+<h1>Please Enter Your Details for Our Dating Website!!</h1>
+<form>
+        <fieldset>
+                <legend>Your Face</legend>
+                <label for="avatar">Your image: </label>
+                <input type="file" id="avatar" name="avatar" required />
+                <img id="preview" />
+        </fieldset>
+        <fieldset>
+                <legend>
+                        Your General Details
+                </legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required /><br />
+                <label>Gender:</label><br />
+                <label for="male">Male</label><input type="radio" id="male" name="male" required />
+                <label for="female">Female</label>
+                <input type="radio" for="female" required /><br />
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required/><br />
+                <label for="bday">Date of birth</label>
+                <input type="date" id="bday" name="bday" /><br />
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color" name="color" /><br />
+                <label for="country">Which country</label>
+                <select id="country" name="country">
+                        <option value="USA">
+                                USA
+                        </option>
+                        <option value="UK">
+                                UK
+                        </option>
+                        <option value="Ireland">
+                                Ireland
+                        </option>
+                        <option value="Canada">
+                                Canada
+                        </option>
+                        <option value="Spain">
+                                Spain
+                        </option>
+                        <option value="No selection">
+                                No selection
+                        </option>
+                </select><br />
+        </fieldset>
+        <fieldset>
+                <legend>
+                        Your indicators
+                </legend>
+                <label for="height">Height</label>
+                <input type="range" min="0" max="100" id="height" name="height"/><br />
+                <label for="salary">Salary</label>
+                <input type="range" min="0" max="0" id="salary" name="salary"/><br />
+        </fieldset>
+        <fieldset>
+                <legend>
+                        Your contact information
+                </legend>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required/><br />
+                <label for="mobile">Mobile</label>
+                <input type="tel" id="mobile" name="mobile"/><br />
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea><br />
+                <label for="contact">Method to contact you</label><br />
+                <input type="checkbox" value="email" name="email" />Email
+                <input type="checkbox"  value="telephone" name="telephone" />Telephone
+                <input type="checkbox" value="carrierpigeon" name="pigeon" />Carrier Pigeon
+        </fieldset>
+        <input type="submit" />
+</form>
+
+</body>

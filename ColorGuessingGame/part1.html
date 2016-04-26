@@ -1,0 +1,30 @@
+<head>
+        <title>Guess the Color</title>
+</head>
+<body onload="do_game()">
+        <script type="text/javascript">
+        var colors = ['red', 'blue', 'green', 'orange', 'purple', 'black', 'white', 'grey', 'lightgrey', 'lightblue'];
+        var colors = colors.sort();
+        var guess_input;
+        var count = 0;
+        var finished = false;
+        var random_number = Math.random() * colors.length;
+        var target_index = Math.floor(random_number);
+        var target = colors[target_index];
+        alert("target is equal to : " + target);
+
+        function do_game() {
+
+                while(!finished) {
+                        guess_input = prompt("I am thinking of one of these colors : \n\n" + colors.join(", ") + "\n\nCan you guess what color it is?");
+                        console.log(guess_input);
+                        if (guess_input == null){
+                                alert("I'm sorry you don't want to play!");
+                                break;
+                        }
+                        count += 1;
+                        finished = guess_input == target;
+                }
+        }
+        </script>
+</body>
